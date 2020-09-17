@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="js\script.js"></script>
+        <title>Flower Shop</title> 
+    </head>
+    <body>
+        <nav class="top-menu">
+            <a href="index.html" class="button">Home</a>
+            <a href="shop.html" class="button">Shop</a>
+            <a href="checkout.html" class="button">Cart</a>
+        </nav>
+        <header>
+            <div class="header-image"></div>   
+            <div class="header-title">Flowers</div>
+        </header>
+        <main>
+            <section class="checkout-container">
+                <div class="buyer-information">
+                    <h1 class="title">Personal Information</h1>
+                    <label>Name</label>
+                    <input type="text">
+                    <label>Address</label>
+                    <input type="text">
+                    <label>City</label>
+                    <input type="text">
+                    <label>Zip/Postal Code</label>
+                    <input type="number">
+                    <label>Country</label>
+                    <input type="text" id="country">
+
+                    <div class="filler"></div>
+                    <div class="filler"></div>
+
+                    <label>E-Mail</label>
+                    <input type="text">
+                    <label>Password</label>
+                    <input type="password" id="password">
+                    <div></div>
+                    <div id="password-container">
+                        <input type="checkbox" id="pw-checkbox" onclick="showPassword()">
+                        <label for="pw-checkbox" class="password-text">Show Password</label>
+                    </div>
+                    <div></div>
+                    <div id="validate-information" onclick="validateForm()">OK</div>
+                </div>
+                <div class="cart-information">
+                    <div class="img-container">
+                        <img src="img/flowers2.jpg" class="img">
+                        <p class="info">
+                            Elit sed vulputate mi sit amet mauris commodo. Consectetur adipiscing elit ut aliquam purus sit amet.
+                            A pellentesque sit amet porttitor eget dolor morbi non arcu. Ultrices neque ornare aenean euismod elementum nisi quis eleifend.
+                        </p>
+                        <div href="#" class="img-overlay"></div>
+                    </div>
+                    <h2 class="title">Pink & White Bouquet</h2>
+                    <p class="price" id="price">29.99</p>
+                    <h3 class="shipping-title">Shipping</h3>
+                    <p id="shipping-price">4.99</p>
+                    <hr class="line">
+                    <h2 class="total">Total:</h2>
+                    <p class="price" id="total">34.98</p>
+                    <div class="button" id="buy-button", onClick="buy()">Buy Now</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
